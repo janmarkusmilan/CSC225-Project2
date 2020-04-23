@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Project 2</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><i class="fas fa-gamepad animated infinite pulse"></i></a>
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="/catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/cart.html" tabindex="-1" aria-disabled="true"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="px-4 pb-5 bg-secondary">  
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-4 bg-white mb-5 mt-5">
+                        <h2 class="text-center">Your Cart</h2>
+                        <hr/>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="ml-3 p-2">PRODUCT</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2">PRICE</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2">QUANTITY</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2">REMOVE</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="border-0">
+                                        <div class="ml-3 p-2">
+                                            <div class="d-inline-block align-middle mr-5">
+                                                <p class="mb-2 mr-4">DOOM Eternal</p>
+                                            </div>
+                                            <img src="/images/DE_Case.jpg" alt="DOOM Eternal" class="img-fluid" width="150">
+                                        </div>
+                                    </th>
+                                    <td class="border-0 align-middle">$59.99</td>
+                                    <td class="border-0 align-middle">1</td>
+                                    <td class="border-0 align-middle"><a href="#"><i class="text-dark fa fa-trash-alt"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="ml-3 p-2">
+                                            <div class="d-inline-block align-middle mr-4">
+                                                <p class="mb-2 mr-3">Marvel's Avengers</p>
+                                            </div>
+                                            <img src="/images/MA_Case.jpg" alt="Marvel's Avengers" class="img-fluid" width="150">
+                                        </div>
+                                    </th>
+                                    <td class="align-middle">$59.99</td>
+                                    <td class="align-middle">1</td>
+                                    <td class="align-middle"><a href="#"><i class="text-dark fa fa-trash-alt"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                    <div class="ml-3 p-2">
+                                        <div class="d-inline-block align-middle mr-5">
+                                            <p class="mb-2 mr-1">Cyberpunk 2077</p>
+                                        </div>
+                                        <img src="/images/C2077_Case.jpg" alt="Cyberpunk 2077" width="150" class="img-fluid">
+                                    </div>
+                                    <td class="align-middle">$59.99</td>
+                                    <td class="align-middle">1</td>
+                                    <td class="align-middle"><a href="#"><i class="text-dark fa fa-trash-alt"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+          
+                <div class="row py-4 p-4 bg-white">
+                    <div class="col-lg-6">
+                        <div class="bg-light px-4 py-3 font-weight-bold text-center">COUPONS</div>
+                        <div class="p-4">
+                            <div class="input-group my-2 justify-content-center">
+                                <input type="text" value="FREESHIPPING" placeholder="Enter Coupon Here" class="form-control p-2" aria-label="Coupon Code" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-money-bill-wave mr-2"></i>Apply coupon</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light px-4 py-3 mb-4">
+                            <p class="text-center font-weight-bold">SWEEPSTAKES</p>
+                            <hr/>
+                            <div class="p-2 mb-2 border">
+                                <p class="mb-2 text-danger font-weight-bold">ENTER TO WIN A $100 GIFTCARD</p>
+                                <p class="mb-2"><small>We pick one winner every month!</small></p>
+                                <p><small>
+                                    Simply click on the button to proceed to checkout and finalize your order.
+                                    When the order is processed, you will automatically be entered in the sweepstakes to win a $100 GiftCard valid at any of our stores (sent via email). 
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-light px-4 py-3 font-weight-bold text-center">ORDER SUMMARY</div>
+                        <div class="p-4">
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong>Subtotal</strong>$179.97</li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong>Tax</strong>$15.98</li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong>Shipping Fee</strong>$8.72</li>
+                                <li class="d-flex justify-content-between py-3 border-bottom text-success"><strong>Coupon Applied: FREESHIPPING</strong>– $8.72</li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong>Total</strong>$195.95</li>
+                            </ul>
+                            <a href="/checkout.html" class="btn btn-success round py-2 btn-block">Proceed To Checkout</a>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+        <div class="container-fluid bg-dark text-center py-4 text-light">
+            Copyright 2020
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

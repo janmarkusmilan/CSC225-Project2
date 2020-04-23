@@ -1,0 +1,12 @@
+.carousel-caption {
+    top: 10%;
+    transform: translateY(-10%);
+    bottom: initial;
+}
+
+@media (max-width: 576px) {
+    .our-team {
+        min-width: 18rem;
+        margin: 15px;
+    }
+}
